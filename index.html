@@ -7,25 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <menu>
-    <div class="container">
+   
 
-        <div class="nombre">Darwin Chamba</div>
-
-        <div class="contacto">
-            <ul>
-                <li>Nosotros</li>
-                <li>Mision</li>
-                <li>Vision</li>
-            </ul>
-
-        </div>
-
-    </div>
-   </menu>
+   <h2>Suma de numeros enteros</h2>
    
    
-   
+   <form action="archivo.php" method="post" enctype="multipart/form-data">
+    
+    <label>
+        Nombre <input name="nombre" type="text">
+    </label>
+    <br>
+    <label>
+        Apellido <input name="apellido" type="text">
+    </label>
+    <br>
+    <p>lenguajes de programacion</p>
+    <label >
+        Kotlin <input name="lenguaje[]" value="kotlin" type="checkbox">
+    </label>
+    <label >
+        C# <input name="lenguaje[]" value="C#" type="checkbox">
+    </label>
+    <label >
+        Python <input name="lenguaje[]" value="python" type="checkbox">
+    </label>
+    <label >
+        Java <input name="lenguaje[]" value="Java" type="checkbox">
+    </label>
+    <br>
+    <p>Seleccione el sexo</p>
+    <label >
+       Femenino <input type="radio" name="sexo" value="Femenino">
+    </label>
+    <label >
+        Masculino <input type="radio" name="sexo" value="Masculino">
+     </label>
+     <br>
+     <textarea name="comentario" rows="10" cols="40"></textarea>
+     <br>
+     <p>Envio de archivos</p>
+     <input type="file" name="imagen">
+     <br><br>
+    <input type="submit">
+
+   </form>
 
     
 </body>
