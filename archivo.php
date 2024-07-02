@@ -23,6 +23,7 @@ echo '<br>';
 
 $isEmpty=(empty($arreglo))? 'Esta vacio': 'No se encuentra vacio';
 echo $isEmpty. '<br>';
+//comprueba si un elemento se encuentra dentro del arreglo
 if(in_array(33,$arreglo)){
     echo'si se encuentra dentro del arreglo'. '<br>';
 }else{
@@ -32,6 +33,27 @@ if(in_array(33,$arreglo)){
 foreach($arreglo as $valor){
     echo $valor .' ';
 }
+echo  '<br>';
 
-
+echo 'Funciones para las cadenas' . '<br>';
+$cadena='  Hola mi nombre es Darwin Chamba  ';
+//elimina los espacios de la derecha y de la izquierda
+echo trim($cadena) . '<br>';
+//elimina los espacios de la izquierda
+echo ltrim('   Hola mundo') . '<br>';
+//eliminar los espacios de la derecha
+echo rtrim('   Hola mundo   ') . '<br>';
+//devuelve la longitud de la cadena
+echo strlen($cadena) . '<br>';
+//compara cadenas
+echo strcmp('hola','Hola') . '<br>';
+echo strcasecmp('Hola','hola') . '<br>';
+//convierte la primera letra en mayuscula
+echo ucfirst ($cadena) . '<br>';
+//convierte la primera letra en minsucula
+echo lcfirst('Hola mucdo') . '<br>';
+//convierte a minusculas
+echo strtolower('HOLA MUNDO'). '<br>';
+//convierte a mayusculas
+echo strtoupper('hola mundo') . '<br>';
 ?>
