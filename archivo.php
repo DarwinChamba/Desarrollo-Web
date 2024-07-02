@@ -56,4 +56,15 @@ echo lcfirst('Hola mucdo') . '<br>';
 echo strtolower('HOLA MUNDO'). '<br>';
 //convierte a mayusculas
 echo strtoupper('hola mundo') . '<br>';
+//extrae una subcadena de la cadena original
+echo substr($cadena,19). '<br>';
+//reemplaza un valor por otro en una cadena
+
+echo str_replace('a','eee',$cadena). '<br>';
+
+echo "funciones para fecha y hora". '<br>';
+
+date_default_timezone_set('America/Guayaquil');
+echo date ('d/m/Y H:i:s'). '<br>';
+
 ?>
