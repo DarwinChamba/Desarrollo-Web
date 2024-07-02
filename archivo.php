@@ -15,6 +15,20 @@ array_unshift($arreglo,777);
 //elimina el primer elmento del arreglo
 array_shift($arreglo);
 
+echo 'la cantidad de elementos es :' . count($arreglo). '<br>';
+$arreglo1=[];
+//comprueba si el arreglo esta vacio
+var_dump(empty($arreglo1));
+echo '<br>';
+
+$isEmpty=(empty($arreglo))? 'Esta vacio': 'No se encuentra vacio';
+echo $isEmpty. '<br>';
+if(in_array(33,$arreglo)){
+    echo'si se encuentra dentro del arreglo'. '<br>';
+}else{
+    echo 'No se encuentra dentro del arreglo '. '<br>';
+}
+
 foreach($arreglo as $valor){
     echo $valor .' ';
 }
