@@ -1,10 +1,11 @@
 <?php
 
-$name=$_GET['name'];
-$apellido=$_GET['apellido'];
-$curso =$_GET['radio'];
+$name=$_POST['name'];
+$apellido=$_POST['apellido'];
+$curso =$_POST['radio'];
+$lenguaje =$_POST['lenguaje'];
 
-echo 'hola mi nombre es: '.$name ." ".$apellido. '<br>';
-echo "has seleccionado " .$curso;
+
+
 
 ?>
